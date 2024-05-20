@@ -68,7 +68,9 @@ return {
 				ignore_list = {},
 			},
 			filesystem = {
-				follow_current_file = true, -- 현재 파일을 따라감
+				follow_current_file = {
+					enabled = true,
+				}, -- 현재 파일을 따라감
 				use_libuv_file_watcher = true, -- libuv 파일 감시기 사용
 				filtered_items = {
 					visible = true, -- 숨김 파일 보이기
